@@ -1,0 +1,24 @@
+<view id="myLogin">
+      <block wx:if="{{info.openid}}">
+            <image id="myIcon" src="{{info.avatarurl}}"></image>
+            <!-- <text id="nickName">{{info.nickname}}</text> -->
+      </block>
+      <button wx:else bindtap="getUserProfile">游客模式，点此登录</button>
+</view>
+<view class="found">
+      <text>{{info.nickname}}</text>
+      <view class="found-item" bindtap="tomypublish">
+            我的动态<image src="/images/right.png"></image>
+      </view>
+      <view class="found-item" bindtap="tomycommunity">
+            我的评论<image src="/images/right.png"></image>
+      </view>
+      <view class="found-item" bindtap="unto">
+            我的点赞<image src="/images/right.png"></image>
+      </view>
+      <view class="found-item" bindtap="unto">
+            热门动态<image src="/images/right.png"></image>
+      </view>
+</view>
+
+

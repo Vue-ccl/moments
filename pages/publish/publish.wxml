@@ -1,0 +1,23 @@
+<view class="publish-top">
+  <view class="publish-button" bindtap="publish">发布</view>
+</view>
+
+<view class="publish-input">
+  <textarea placeholder="这一刻的想法..." maxlength="2000" bindinput="getValue"></textarea>
+</view>
+
+<view class="address">
+<image src="/images/address.png"></image>
+<picker mode="selector" range="{{location}}" range-key="{{'address'}}" value="{{index}}" bindchange="bindPickerChange">
+{{location[index].address}}
+</picker>
+</view>
+<view class="img-box">
+  <view class="img-item" wx:for="{{tempFilePaths}}" wx:key="index">
+    <image src="{{item}}" class="img-select"></image>
+    <image src="/images/delectCamera.png" class="img-delect" bindtap="delectCamera" data-index="{{index}}"></image>
+  </view>
+  <view class="img-item-add" wx:if="{{show}}">
+    <image src="/images/addCamera.png" class="img-addCamera" bindtap="chooseImages"></image>
+  </view>
+</view>

@@ -1,0 +1,118 @@
+
+/* 朋友圈内容 */
+.message {
+  display: flex;
+  flex-direction: row;
+  padding:20rpx;
+}
+.face-img {
+  width: 100rpx;
+  height: 100rpx;
+}
+.left{
+   margin-right: 15rpx;
+}
+.right{
+
+}
+.nickname{
+  color: #586b94;
+  font-weight: 550;
+  font-size: 35rpx;
+  margin-bottom: 10rpx;
+}
+.context{
+
+}
+/* 发布图片 */
+.img1{
+
+}
+/* 时间-删除 */
+.time-delete{
+  display: flex;
+  flex-direction: row;
+  font-size: 28rpx;
+  margin: 10rpx 0;
+}
+.time{
+  color: #7f7f7f;
+  margin-right: 20rpx;
+  font-size: 28rpx;
+}
+.delete{
+  color: rgb(42, 88, 214);
+}
+.communicat-box{
+ 
+  width: 580rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 30rpx;
+  color: rgb(126, 121, 121);
+}
+.communicat-item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.communicat-box image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+/* 发布图片 */
+.conimages{
+  margin-top: 10rpx;
+}
+.conimages-1{
+  width: 500rpx;
+  height: 250rpx;
+}
+.conimages-1-3{
+  width: 180rpx;
+  height: 180rpx;
+  margin-right: 10rpx;
+}
+.conimages-4{
+  width: 250rpx;
+  height: 250rpx;
+  margin-right: 10rpx;
+}
+.conimages-5-9{
+  width: 180rpx;
+  height: 180rpx;
+  margin-right: 10rpx;
+}
+/* 互动点赞列表 */
+.ok-box{
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding:5px;
+  font-size: 30rpx;
+  color: #586B94;
+  border-bottom: 1px solid #ededed;
+}
+.ok-box image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+/* 互动评论列表 */
+.comment-box{
+  background: #f7f7f7;
+  padding:5px;
+  font-size: 30rpx;
+  border-bottom: 1px solid #ededed;
+}
+.comment{
+  margin-bottom: 20rpx;
+}
+.comment-nickname{
+  color: #586B94;
+  font-weight: 600;
+}

@@ -1,0 +1,35 @@
+/* pages/mycommunity/mycommunity.wxss */
+/* 评论区 */
+.comment-left-item{
+  display: flex;
+  margin: 10rpx;
+  background: rgb(186, 228, 200);
+  border-radius: 20rpx;
+  padding: 10rpx;
+
+}
+.comment-face{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
+  margin: 10rpx;
+}
+.nickname-time{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 525rpx;
+}
+.comment-nickname{
+  color: #586B94;
+}
+.comment-text{
+  margin-top: 10rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-indent: 5rpx;
+}
+.comment-content{
+  width: 600rpx;
+}

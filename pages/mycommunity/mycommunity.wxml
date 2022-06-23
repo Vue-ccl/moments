@@ -1,0 +1,11 @@
+<!--pages/mycommunity/mycommunity.wxml-->
+<view class="comment-left-item" wx:for="{{mycommunity}}" wx:key="index" bindtap="delectcommunity" data-cid="{{item.cid}}">
+      <image class="comment-face" src="{{info.avatarurl}}"></image>
+      <view class="comment-content">
+        <view class="nickname-time">
+          <view class="comment-nickname">{{info.nickname}}</view>
+          <view class="time">{{item.ctime}}</view>
+        </view>
+        <view class="comment-text">{{item.comments}}</view>
+      </view>
+</view>

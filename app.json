@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/publish/publish",
+    "pages/found/found",
+    "pages/mypublish/mypublish",
+    "pages/mycommunity/mycommunity"
+  ],
+  "window": {},
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#33cc66",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/index_inact.png",
+        "selectedIconPath": "images/index_act.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/found/found",
+        "iconPath": "images/found_inact.png",
+        "selectedIconPath": "images/found_act.png",
+        "text": "发现"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

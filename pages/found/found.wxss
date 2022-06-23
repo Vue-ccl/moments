@@ -1,0 +1,52 @@
+
+/* 登录面板 */
+#myLogin{
+  background-color: #33cc66;
+  height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* 1-1微信头像 */
+#myIcon{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+
+/* 1-2用户昵称 */
+#nickName{
+  color: white;
+}
+.found{
+  width: 600rpx;
+  background: rgba(255, 255, 255, 0.1);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+  margin: 0 auto;
+  font-size: 38rpx;
+  padding: 100rpx 50rpx 20rpx 50rpx;
+  position: relative;
+  top:-95rpx
+}
+.found-item{
+  margin: 50rpx 0;
+  border-bottom: 1rpx solid silver;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.found text{
+  color: rgb(241, 233, 233);
+  font-size: 38rpx;
+  position: absolute;
+  top: 20rpx;
+  left: 290rpx;
+  margin: 0 auto;
+}
+.found image{
+  width: 45rpx;
+  height: 45rpx;
+}

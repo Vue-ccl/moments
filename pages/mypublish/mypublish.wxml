@@ -1,0 +1,59 @@
+<!-- 下部分 -->
+
+<view class="message" wx:for="{{publish}}" wx:key="index">
+  <view class="left">
+    <image class="face-img" src="{{item.avatarurl}}"></image>
+  </view>
+  <view class="right">
+    <view class="nickname">{{item.nickname}}</view>
+    <!-- 发布内容-文本 -->
+    <view class="context" bindtap="todetail" data-index="{{index}}">
+      {{item.context}}
+    </view>
+    <!-- 发布内容图片 -->
+    <view class="conimages">
+      <block wx:if="{{imglist[index]=='null'}}">
+    </block>
+    <block wx:if="{{imglist[index].length==1}}">
+      <image src="{{imgItem}}" class="conimages-1" wx:for="{{imglist[index]}}" wx:for-item="imgItem" wx:key="imgindex" wx:for-index="imgindex" bindtap="preview_img" data-imglist="{{imglist[index]}}" data-imgitem="{{imgItem}}"></image>
+    </block>
+
+    <block wx:if="{{imglist[index].length==2 || imglist[index].length==3}}" >
+      <image src="{{imgItem}}" class="conimages-1-3" wx:for="{{imglist[index]}}" wx:for-item="imgItem" wx:key="imgindex" wx:for-index="imgindex" bindtap="preview_img" data-imglist="{{imglist[index]}}" data-imgitem="{{imgItem}}"></image>
+    </block>
+
+    <block wx:if="{{imglist[index].length==4}}">
+      <image src="{{imgItem}}" class="conimages-4" wx:for="{{imglist[index]}}" wx:for-item="imgItem" wx:key="imgindex" wx:for-index="imgindex" bindtap="preview_img" data-imglist="{{imglist[index]}}" data-imgitem="{{imgItem}}"></image>
+    </block>
+
+    <block wx:if="{{imglist[index].length >=5 && imglist[index].length <=9 }}">
+      <image src="{{imgItem}}" class="conimages-5-9" wx:for="{{imglist[index]}}" wx:for-item="imgItem" wx:key="imgindex" wx:for-index="imgindex" bindtap="preview_img" data-imglist="{{imglist[index]}}" data-imgitem="{{imgItem}}"></image>
+    </block>
+    </view>
+
+    <!-- 发布时间-删除 -->
+    <view class="time-delete">
+      <view class="time">{{item.ptime}}</view>
+      <view class="delete" wx:if="{{item.openid == info.openid}}" bindtap="depublish" data-pid="{{item.pid}}">删除</view>
+    </view>
+
+    <!-- 互动区 -->
+    <view class="communicat-box">
+      <view class="communicat-item" bindtap="share">
+        <image src="/images/share.png"></image>
+        <view>分享</view>
+      </view>
+      <view class="communicat-item" bindtap="todetail" data-index="{{index}}">
+        <image src="/images/community.png"></image>
+        <view>评论</view>
+      </view>
+      <view class="communicat-item" bindtap="selectcheers" data-pid="{{item.pid}}" data-index="{{index}}">
+        <image src="/images/cheers.png" wx:if="{{!arrs[index]}}"></image>
+        <image src="/images/cheers_in.png" wx:else ></image>
+        <view>点赞</view>
+      </view>
+    </view>
+
+  </view>
+
+</view>
